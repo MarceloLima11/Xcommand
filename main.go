@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/MarceloLima11/show-files/cmd"
+	"github.com/MarceloLima11/Xcommand/cmd"
 )
 
 func main() {

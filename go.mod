@@ -1,4 +1,4 @@
-module github.com/MarceloLima11/show-files
+module github.com/MarceloLima11/Xcommand
 
 go 1.20
 
