@@ -14,7 +14,7 @@ To use Xcommand, follow these steps:
 
 1. Download the repository or clone it to your computer:
 
-        git clone https://github.com/your-username/Xcommand.git
+        git clone https://github.com/MarceloLima11/Xcommand.git
 
 
 
