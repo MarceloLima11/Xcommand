@@ -1,0 +1,23 @@
+# binaries exe
+*.exe
+*.out
+*.so
+*.dll
+
+# logs
+*.log
+
+# compilation dir
+/bin/
+/pkg/
+/vendor/
+
+# config
+.idea/
+.vscode/
+.DS_Store
+
+# dep
+/go.mod
+/go.sum
+
