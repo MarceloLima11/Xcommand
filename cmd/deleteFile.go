@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/MarceloLima11/Xcommand/utils"
 	"github.com/urfave/cli/v2"
 )
 
@@ -18,15 +19,13 @@ func deleteFile(c *cli.Context) error {
 	filePath := c.Args().First()
 
 	fileInfo, err := os.Stat(filePath)
-	if err != nil {
-		return err
-	}
+	utils.ThrowErrorIfHas(err, utils.PathNotFound, 1)
+
 	fileName := fileInfo.Name()
 	result := fmt.Sprintln("     ❌ File", fileName, "removed")
+
 	err = os.Remove(filePath)
-	if err != nil {
-		return err
-	}
+	utils.ThrowErrorIfHas(err, utils.RemoveFile, 1)
 
 	fmt.Println()
 	fmt.Println()
