@@ -3,13 +3,14 @@ package cmd
 import (
 	"os"
 
+	"github.com/MarceloLima11/Xcommand/utils"
 	"github.com/urfave/cli/v2"
 )
 
 func Execute() error {
 	app := &cli.App{
-		Name:  "",
-		Usage: ">NOME PROVISORIO ⚔<",
+		Name:  "Xcommand",
+		Usage: "Terminal directory manager",
 		Commands: []*cli.Command{
 			ListDirectories,
 			ShowDirectoryDetails,
@@ -18,9 +19,7 @@ func Execute() error {
 	}
 
 	err := app.Run(os.Args)
-	if err != nil {
-		return err
-	}
+	utils.ThrowErrorIfHas(err, utils.BasicError, 1)
 
 	return nil
 }

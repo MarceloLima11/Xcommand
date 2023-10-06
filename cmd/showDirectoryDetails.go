@@ -52,7 +52,7 @@ func showDirectoryDetails(c *cli.Context) error {
 
 	fmt.Println()
 	fmt.Println()
-	fmt.Println("⭐️ ", fileInfo.Name())
+	fmt.Println("✨ ", fileInfo.Name())
 	fmt.Println("📏 ", fileInfo.Size())
 	fmt.Println("🕒 ", fileInfo.ModTime().Format(time.DateTime))
 
